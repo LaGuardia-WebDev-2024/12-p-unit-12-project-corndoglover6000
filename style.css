@@ -1,10 +1,69 @@
-#movie-result {
+body {
+  background-image: url();
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: auto;
+  max-width: 600px;
+  font-family: "Fontdiner Swanky", serif;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(122, 7, 88);
+}
+
+form {
+  text-align: center;
+  color: rgb(122, 7, 88);
+}
+
+button {
+  font-family: "Fontdiner Swanky", serif;
+  color: rgb(122, 7, 88);
+  background: rgb(205, 244, 98);
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+
+select {
+  font-family: "Fontdiner Swanky", serif;
+  color: rgb(122, 7, 88);
+  background: rgb(255, 198, 230);
+  border: none;
+}
+
+option:hover {
   background: rgb(244, 98, 181);
-  border: 5px solid black;
+}
+
+
+#loyalty-result {
+  background: rgb(244, 98, 181);
   font-size: 24px;
   min-height: 160px;
   margin-top: 10px;
   margin-bottom: 20px;
+  font-family: "Fontdiner Swanky", serif;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+#kindness-result {
+  background: rgb(244, 98, 181);
+  font-size: 24px;
+  min-height: 160px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Fontdiner Swanky", serif;
+  padding-left: 20px;
+}
+
+hr {
+  border: 5px dashed rgb(92, 212, 221);
 }
 
 #book-result {
@@ -16,7 +75,8 @@
   margin-bottom: 20px;
 }
 
-hr {
-  height: 5px;
-  background-color: black;
+.fontdiner-swanky-regular {
+  font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+  font-style: normal;
 }

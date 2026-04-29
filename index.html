@@ -19,73 +19,130 @@ Select ONE Additional Feature to Add
     <meta charset="utf-8" />
     <title>Unit 12 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
   </head>
   <body>
     <h1>Quiz About [Me]</h1>
-    <hr />
+    <hr /><br>
     <!-- Movie Question -->
-    <form id="movie-form">
+    <form id="loyalty-form">
       <label>
-        🎥 What is my favorite movie?
-        <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+        who is the element of loyalty?
+        <select id="loyalty-answer">
+          <option value="applejack">applejack</option>
+          <option value="pinkie">pinkie pie</option>
+          <option value="twilight">twilight sparkle</option>
+          <option value="fluttershy">fluttershy</option>
+          <option value="rainbow-dash">rainbow dash</option>
+          <option value="rarity">rarity</option>
         </select>
       </label>
-      <button type="submit">Check Movie Answer</button>
+      <button type="submit">check answer</button>
     </form>
-    <div id="movie-result">
-      <p id="movie-text"></p>
+    <div id="loyalty-result">
+      <p id="loyalty-text"></p>
     </div>
-    <hr />
     <!-- Book Question -->
-    <form id="book-form">
+    <form id="kindness-form">
       <label>
-        📖 What is my favorite book?
-        <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+        who is the element of kindness?
+        <select id="kindness-answer">
+          <option value="applejack">applejack</option>
+          <option value="pinkie">pinkie pie</option>
+          <option value="twilight">twilight sparkle</option>
+          <option value="fluttershy">fluttershy</option>
+          <option value="rainbow-dash">rainbow dash</option>
+          <option value="rarity">rarity</option>
         </select>
       </label>
-      <button type="submit">Check Book Answer</button>
+      <button type="submit">check answer</button>
     </form>
-    <div id="book-result">
-      <p id="book-text"></p>
+    <div id="kindness-result">
+      <p id="kindness-text"></p>
     </div>
+    <!-- Book Question -->
+    <form id="loyalty-form">
+      <label>
+        who is the element of generosity?
+        <select id="loyalty-answer">
+          <option value="applejack">applejack</option>
+          <option value="pinkie">pinkie pie</option>
+          <option value="twilight">twilight sparkle</option>
+          <option value="fluttershy">fluttershy</option>
+          <option value="rainbow-dash">rainbow dash</option>
+          <option value="rarity">rarity</option>
+        </select>
+      </label>
+      <button type="submit">check answer</button>
+    </form>
+    <div id="loyalty-result">
+      <p id="loyalty-text"></p>
+    </div>
+    <!-- Book Question -->
+    <form id="loyalty-form">
+      <label>
+        who is the first villain of the show?
+        <select id="loyalty-answer">
+          <option value="tirek">tirek</option>
+          <option value="nightmare">nightmare moon</option>
+          <option value="chrysalis">queen chrysalis</option>
+          <option value="discord">discord</option>
+        </select>
+      </label>
+      <button type="submit">check answer</button>
+    </form>
+    <div id="loyalty-result">
+      <p id="loyalty-text"></p>
+    </div>
+    <!-- Book Question -->
+    <form id="loyalty-form">
+      <label>
+        where does twilight move to in the first episode?
+        <select id="loyalty-answer">
+          <option value="applejack">canterlot</option>
+          <option value="pinkie">appleloosa</option>
+          <option value="twilight">ponyville</option>
+          <option value="fluttershy">fillydelphia</option>
+        </select>
+      </label>
+      <button type="submit">check answer</button>
+    </form>
+    <div id="loyalty-result">
+      <p id="loyalty-text"></p>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       
       //========================Movie Question jQuery Code
-      $("#movie-form").on("submit", function (event) {
+      $("#loyalty-form").on("submit", function (event) {
         event.preventDefault();
 
-        var $answer = $("#movie-answer");
+        var $answer = $("#loyalty-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
-          $("#movie-text").text("YESSSS!");
+        if (answer === "rainbow-dash") {
+          $("#loyalty-text").text("yup");
         } 
         else {
-          $("#movie-text").text("Try Again!");
+          $("#loyalty-text").text("nope");
         }
       });
 
       //=======================Book Question jQuery Code
-      $("#book-form").on("submit", function (event) {
+      $("#kindness-form").on("submit", function (event) {
         event.preventDefault();
 
-        var $answer = $("#book-answer");
+        var $answer = $("#kindness-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
-          $("#book-text").text("YESSSS!");
+        if (answer === "fluttershy") {
+          $("#kindness-text").text("yup");
         } 
         else {
-          $("#book-text").text("Try Again!");
+          $("#kindness-text").text("nope");
         }
       });
       
